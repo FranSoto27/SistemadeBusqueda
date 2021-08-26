@@ -2,10 +2,45 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Bienvenido</h1>
-    <p>Aprenda acerca de <a href="https://docs.microsoft.com/aspnet/core">construir páginas web con ASP.NET Core</a>.</p>
-</div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Busqueda</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+   
+    <div class="container">
+        <div>
+            <div>
+                <h3>Ingreso al sistema</h3>
+            </div>
+            <div>
+                <div>
+                    <label>Usuario</label>
+                    <input />
+                </div>
+                <div>
+                    <label>Contraseña</label>
+                    <input />
+                </div>
+                <button>Ingresar</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>
